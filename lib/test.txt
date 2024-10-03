@@ -1,0 +1,30 @@
+void main() {
+  // list
+  List bazarList = ['tomato', 'alu', 'badah copy', 'mula'];
+  List bazarList2 = ['mach', 'chiken', 'dal'];
+  // map
+  Map bazarItems = {"tomato": 20, "alu": 30};
+
+  print(bazarList.length);
+
+  //add
+  bazarList.add('mach');
+  print(bazarList.length);
+
+  //remove
+  bazarList.removeAt(0);
+  print(bazarList.length);
+  print(bazarList);
+
+//reverse
+  print(bazarList.reversed);
+
+// elomelo kora
+  bazarList.shuffle();
+  print(bazarList);
+
+  // another list add
+  bazarList.addAll(bazarList2);
+
+  print(bazarList);
+}
